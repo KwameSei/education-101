@@ -1,15 +1,15 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)   #Setting the app to an instance class of Flask
 
 #Creating routes using decorators
-@app.route("/")
-@app.route("/home") #Using main route for home page
+@app.route('/')
+@app.route('/home') #Using main route for home page
 def home():
-    return "<h1>Home Page!</h1>"
+    return render_template('home.html')
 
-@app.route("/about") #Using "/" route for home page
+@app.route('/about') #Using "/" route for home page
 def about():
-    return "<h1>About Page!</h1>"
+    return render_template('about.html')
 
 
 #Running app directly using python filename.py
