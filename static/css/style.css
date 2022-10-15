@@ -1,9 +1,137 @@
-body{
-    background-color: #212121;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --heading: 'Montserrat', 'san-serif';
+}
+
+.main-content{
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.nav-link{
+    color: red;
+}
+
+.banner{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 8px;
+}
+
+.banner-content{
+    padding: 0 2rem;
+    line-height: 1.7;
+}
+.banner-content h2{
+    font-size: 2rem;
+    font-family: var(--heading);
+}
+.banner-content h3{
+    padding: 1rem 0;
+}
+.banner-content button{
+    border: solid #ffffff;
+    border-radius: 2rem;
+    background: blue;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+}
+.banner-content button a{
+    color: #ffffff;
+    transition: color 1s ease;
+}
+.banner-content button:hover{
+    background: #ffffff;
+    border: solid blue;
+}
+.banner-content button a:hover{
+    color: blue;
+}
+.current-news-head{
+    background: #ffffff;
+    color: black;
+    padding: 20px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+.current-news-head h3{
+    padding: 6px;
+    cursor: pointer;
+    position: relative;
+}
+.current-news-head h3:hover::before{
+    content: ">>  ";
+    position: absolute;
+    left: 0;
     color: #ffffff;
 }
-#logo{
-    height: 35px;
-    width: 65px;
-    border-radius: 100px;
+.current-news-head span{
+    display: block;
+    font-family: var(--heading);
+    font-weight: 300;
+    text-transform: uppercase;
 }
+.hot-topic{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    height: 300px;
+}
+.hot-topic img{
+    display: block;
+}
+.hot-topic-content{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    line-height: 1.3;
+    color: #212121;
+}
+.hot-topic h2{
+    padding: 10px 0;
+    font-size: 18px;
+    text-shadow: 0 0 2px #ffffff;
+}
+.hot-topic h3{
+    padding: 10px 0;
+    font-size: 16px;
+    text-shadow: 0 0 2px #ffffff;
+}
+.hot-topic p{
+    padding: 10px 0;
+    font-size: 15px;
+    text-shadow: 0 0 2p #ffffff;
+    padding: 12px 10px;
+}
+hr{
+    background: #ffffff;
+}
+.hot-topic-content a{
+    display: block;
+    background: blue;
+    border: none;
+    width: 95px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin: 10px 0 10px 10px;
+}
+.hot-topic-content a:hover{
+    text-decoration: underline;
+}
+/*
+font-family: 'Montserrat', sans-serif
+font-family: 'Raleway', sans-serif
+*/

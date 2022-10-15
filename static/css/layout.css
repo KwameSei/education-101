@@ -1,0 +1,58 @@
+body{
+   /* background-color: #212121;
+    color: #ffffff; */
+    font-family: 'Raleway';
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: #ffffff;
+}
+.website-header{
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.website-header #logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 30px;
+}
+.website-header h1{
+    margin: auto 0; /*Vertically centered*/ 
+}
+.website-header .social-icons{
+     text-align: right;
+     flex-grow: 1;  /*Expand till the end | Used together with text align*/
+}
+.social-icons i{
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+
+@media(min-width: 800px){
+
+}
+@media(max-width: 460px){
+    .hot-topic-content h2{
+        font-size: 16px;
+    }
+}
+@media(min-width: 768px){
+    .banner-sub-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 1080px){
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1fr, 2fr);
+    }
+}
+
+

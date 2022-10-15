@@ -1,55 +1,160 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'layouts.html' %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% block title %}
+    Home Page
+{% endblock %}
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <img id="logo" src="static/img/logo.jpeg" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Register</a>
-                </li>
-            </ul>
+{% block content %}
+    <section class="banner">
+        <div class="banner-content">
+            <h2>GET THE LATEST EDUCATION NEWS ACROSS AFRICA</h2>
+            <h3>Africa's First & Leading Education Platform</h3>
+
+            <button>
+                <a href="#">Find Out <i class="fa fa-hand-o-right"></i></a>
+            </button>
+
+            <div class="current-news-head">
+                <h3>
+                    Apple Glasses: what we expect, what we think we are <span>by Nat Osei</span>
+                </h3>
+                <h3>
+                    Mafe Girls Senior High School robotic team has won the global championship <span>by Nat Osei</span>
+                </h3>
+                <h3>
+                    Ghanaian journalist Ridwan Karim Dini-Osman wins award for excellence in science communication <span>by Nat Osei</span>
+                </h3>
+                <h3>
+                    Mastercard KNUST provides amenities to Kotei-Deduako Community Special School <span>by Nat Osei</span>
+                </h3>
+            </div>
         </div>
-    </nav>
-    <h1>Home</h1>
+            <div class="banner-sub-content">
+                <div class="hot-topic">
+                    <img src="static/img/home/high-way.png">
 
-    <!-- Optional JavaScript; choose one of the two! -->
+                    <div class="hot-topic-content">
+                        <h2>Dr Naomi Adjepong wins Best in Education at 2022 Forty Under 40 Awards</h2>
+                        <h3>New Topic 1</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                <div class="hot-topic">
+                    <img src="static/img/home/img_2.jpeg">
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+                    <div class="hot-topic-content">
+                        <h2>Dr Naomi Adjepong wins Best in Education at 2022 Forty Under 40 Awards</h2>
+                        <h3>New Topic 1</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                </div>
+
+                <div class="hot-topic">
+                    <img src="static/img/home/black-star-square.jpg">
+
+                    <div class="hot-topic-content">
+                        <h2>Dr Naomi Adjepong wins Best in Education at 2022 Forty Under 40 Awards</h2>
+                        <h3>New Topic 1</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                </div>
+
+                <div class="hot-topic">
+                    <img src="static/img/home/canopy-walk.jpg">
+
+                    <div class="hot-topic-content">
+                        <h2>Dr Naomi Adjepong wins Best in Education at 2022 Forty Under 40 Awards</h2>
+                        <h3>New Topic 1</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <hr>
+
+    <main>
+        <section class="main-container-left">
+            <h2>Trending Stories</h2>
+            <div class="container-top-left">
+                <article>
+                    <img src="static/img/home/hill-view-hotel.jpg" width="500px" height="350px">
+
+                    <div>
+                        <h3>Some Heading Goes Here</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                       <a href="#">Read More<span></span></a> 
+                    </div>
+                </article>
+
+                <div class="container-bottom-left">
+                    <article>
+                        <img src="static/img/home/Kwame_Nkrumah_Statue.jpg" width="500px" height="350px">
+    
+                        <div>
+                            <h3>Some Heading Goes Here</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                           <a href="#">Read More<span></span></a> 
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="static/img/home/Independence-Day-Parade.jpeg" width="500px" height="350px">
+    
+                        <div>
+                            <h3>Some Heading Goes Here</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                           <a href="#">Read More<span></span></a> 
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container-right">
+            <h2>Latest Stories</h2>
+            <article>
+                <div>
+                    <h4>Some Heading Goes Here</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <a href="#">Read More<span></span></a> 
+                </div>
+                <img src="static/img/home/Sarkodie.jpg" width="500px" height="350px">
+            </article>
+
+            <article>
+                <div>
+                    <h4>Some Heading Goes Here</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <a href="#">Read More<span></span></a> 
+                </div>
+                <img src="static/img/home/forces-on-parade.jpeg" width="500px" height="350px">
+            </article>
+
+            <article>
+                <div>
+                    <h4>Some Heading Goes Here</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <a href="#">Read More<span></span></a> 
+                </div>
+                <img src="static/img/home/Asantewaa-guest-house1.jpg" width="500px" height="350px">
+            </article>
+
+            <article>
+                <div>
+                    <h4>Some Heading Goes Here</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <a href="#">Read More<span></span></a> 
+                </div>
+                <img src="static/img/home/VGMA.jpg" width="500px" height="350px">
+            </article>
+        </section>
+    </main>
+    
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
