@@ -31,13 +31,16 @@ header{
 .website-header h1{
     margin: auto 0; /*Vertically centered*/ 
 }
-.website-header .social-icons{
+.social-icons{
      text-align: right;
      flex-grow: 1;  /*Expand till the end | Used together with text align*/
 }
 .social-icons i{
     margin: 0 7px;
     cursor: pointer;
+}
+.social-icons i:hover{
+    color: var(--colorRed);
 }
 /*******END*******STYLING THE HEADER*******END*******/
 
@@ -66,6 +69,37 @@ nav ul{
 }
 /*******END*******STYLING THE NAVBAR*******END*******/
 
+/*******START*******STYLING THE BREAKING NEWS*******START*******/
+.breaking-news-section{
+    padding: 0 30px 0 60px;
+    display: flex;  /*Making breaking news slide horizontally*/
+}
+#btext{
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--colorRed);
+    font-weight: 600;
+    margin: auto;
+}
+.breaking-news{
+    padding: 0 30px;
+    color: #ffffff;
+    font-weight: 800;
+    display: inline-block;    /*Text appear next to each other*/
+    height: 30px;
+}
+.breaking-news:hover{
+    color: var(--colorRed);
+    cursor: pointer;
+}
+.bntime{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 10px;
+    font-size: 12px;
+}
+/*******END*******STYLING THE BREAKING NEWS*******END*******/
 
 /*******START*******STYLING THE NAVBAR*******START*******/
 /*******END*******STYLING THE NAVBAR*******END*******/

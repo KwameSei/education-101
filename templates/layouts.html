@@ -44,8 +44,8 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#"><i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
                         </li>
@@ -79,6 +79,25 @@
                     </ul>
                 </div>
             </nav>
+            <!--Creating the breaking news-->
+            <div class="breaking-news-section">
+                <span id="btext">Breaking News</span>
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()"> <!--Sliding text from right to left-->
+                    <!--Links to some breaking news-->
+                    <a href="#" class="breaking-news">
+                        <p class="bntime">16 Oct 2022 :</p>
+                        Mafe Girls Senior High School robotic team has won the global championship 
+                    </a>
+                    <a href="#" class="breaking-news">
+                        <p class="bntime">21 Sept 2022 :</p>
+                        Ghanaian journalist Ridwan Karim Dini-Osman wins award for excellence in science communication 
+                    </a>
+                    <a href="#" class="breaking-news">
+                        <p class="bntime">10 Oct 2022 :</p>
+                        Mastercard KNUST provides amenities to Kotei-Deduako Community Special School 
+                    </a>
+                </marquee>
+            </div>
         </div>
     </header>
     
