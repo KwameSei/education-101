@@ -1,3 +1,8 @@
+/*Setting global variable colours to use them often*/
+:root{
+    --colorRed:red;
+}
+
 body{
    /* background-color: #212121;
     color: #ffffff; */
@@ -5,6 +10,8 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/*******START*******STYLING THE HEADER*******START*******/
 header{
     background-color: black;
     color: #ffffff;
@@ -32,8 +39,36 @@ header{
     margin: 0 7px;
     cursor: pointer;
 }
+/*******END*******STYLING THE HEADER*******END*******/
+
+/*******START*******STYLING THE NAVBAR*******START*******/
+nav{
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+nav ul{
+    margin: 20px 0 0 0;
+}
+/*Styling each navbar list*/
+.navbar-nav li{
+    padding: 10px 15px;
+}
+
+/*Styling the navbar links*/
+.navbar-nav li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+.navbar-nav li a:hover{
+    color: var(--colorRed);
+}
+/*******END*******STYLING THE NAVBAR*******END*******/
 
 
+/*******START*******STYLING THE NAVBAR*******START*******/
+/*******END*******STYLING THE NAVBAR*******END*******/
 @media(min-width: 800px){
 
 }
