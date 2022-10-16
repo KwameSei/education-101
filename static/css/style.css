@@ -1,3 +1,51 @@
+#popular-news{
+    display: flex;  /*Putting images next to each other horizontally*/
+    margin: 30px 5%;
+}
+#popular-news img{
+    width: 100%;
+    filter: brightness(0.7); /*Darkening the image for the text to stand out*/
+}
+.news-container img{
+    height: 202.5px;
+}
+#popular-news h2{
+    margin: 0;
+    padding: 5px;
+    color: #ffffff;
+}
+#featured h2{
+    background-color: blue;
+}
+#latest h2{
+    background-color: darkblue;
+}
+#our-picks h2{
+    background-color: red;
+}
+.carousel .news-container{
+    position: relative;
+}
+.popular-news-text{
+    font-size: 14px;
+    position: absolute;
+    color: #ffffff;
+    z-index: 2; /*Placing the text on top of the images*/
+    bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+/*Giving columns or grids to images*/
+#featured{
+    flex: 2;    /*Featured image occupies 2 out of 3 grids*/
+}
+#latest, #our-picks{
+    flex: 1;    /*Respective images occupy 1 out of 3 grids*/
+}
+.news-container:hover > .popular-news-text{
+    bottom: 10px;
+}
 /*
 *{
     box-sizing: border-box;
