@@ -47,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/"><i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">POLITICS</a>
@@ -66,19 +66,26 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">SPORTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VIDEOS</a>
+                        </li>
+                        {% if user.is_authenticated %}
                             <li class="nav-item">
-                                <a class="nav-link" href="#">VIDEOS</a>
+                                <a class="nav-link" href="/logout">LOGOUT</a>
                             </li>
+                        {% else %}
                             <li class="nav-item">
                                 <a class="nav-link" href="/login">LOGIN</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/register">REGISTER</a>
                             </li>
-                        </li>
+                        {% endif %}
                     </ul>
                 </div>
             </nav>
+
             <!--Creating the breaking news-->
             <div class="breaking-news-section">
                 <span id="btext">Breaking News</span>
@@ -100,6 +107,25 @@
             </div>
         </div>
     </header>
+
+    <!--Creating flash messages-->
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                {% if category == 'error' %}
+                    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                {% else %}
+                    <div class="alert alert-success alter-dismissable fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
     
     {% block content %}
 
